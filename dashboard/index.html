@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Syskit Customer Analytics Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+        .header { background: #2E86AB; color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+        .metrics { display: grid; grid-template-columns: repeat(4,1fr); gap: 15px; margin: 20px 0; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .value { font-size: 28px; font-weight: bold; color: #2E86AB; }
+        .table { background: white; padding: 20px; border-radius: 10px; margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: #2E86AB; color: white; padding: 10px; text-align: left; }
+        td { padding: 10px; border-bottom: 1px solid #ddd; }
+        .critical { color: #d9534f; font-weight: bold; }
+        .high { color: #f0ad4e; font-weight: bold; }
+        .medium { color: #5bc0de; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Syskit Customer Analytics Dashboard</h1>
+        <p>Author: Antoni Šitum | March 2026</p>
+    </div>
+
+    <div class="metrics">
+        <div class="card"><div class="value">500</div><div>Total Customers</div></div>
+        <div class="card"><div class="value">15.0%</div><div>Churn Rate</div></div>
+        <div class="card"><div class="value">$16.5M</div><div>Total ARR</div></div>
+        <div class="card"><div class="value">96</div><div>At-Risk</div></div>
+    </div>
+
+    <div class="table">
+        <h3>⚠️ Top At-Risk Customers</h3>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Plan</th>
+                <th>Health Score</th>
+                <th>ARR</th>
+                <th>Risk Level</th>
+            </tr>
+            <tr>
+                <td>TechCorp Inc</td>
+                <td>Enterprise</td>
+                <td>25</td>
+                <td>$150,000</td>
+                <td class="critical">Critical</td>
+            </tr>
+            <tr>
+                <td>DataSystems</td>
+                <td>Business</td>
+                <td>35</td>
+                <td>$75,000</td>
+                <td class="high">High</td>
+            </tr>
+            <tr>
+                <td>CloudNet</td>
+                <td>Starter</td>
+                <td>45</td>
+                <td>$25,000</td>
+                <td class="medium">Medium</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 10px;">
+        <h3>📊 Health Distribution</h3>
+        <p>✅ Healthy: 103 (20.6%)</p>
+        <p>👀 Monitoring: 301 (60.2%)</p>
+        <p>⚠️ At-Risk: 70 (14.0%)</p>
+        <p>🔴 Critical: 26 (5.2%)</p>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9da5a63f6ce0ec1e',t:'MTc3MzE4MDYyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
